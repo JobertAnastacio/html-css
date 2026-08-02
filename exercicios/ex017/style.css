@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* 
+    Medidas absolutas
+    centimetr(cm), milimetro(mm),polegada(in)
+    pixel(px), ponto(pt), paica(pc)
+    medidas relativas
+    em, ex, rem, vw, vh, %
+    16px, geralmente é igual a 1em
+    */
+    font-size: 1em;
+    background-image: linear-gradient(to right,#8484e9b7,white);
+
+}
+h1{
+    /*shorthand font
+    font-style -> font-weight -> font-size -> font-family*/
+    font:italic bolder 3em sans-serif;
+}
+h2{
+    font: bold 2em sans-serif
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <H1>Videos hospedados localmente</H1>
+    <p>Este video esta hospedado no meu próprio servidor</p>
+    <h2>forma padrão</h2>
+    <video src="midia/Meu-Video.webm.webm" width="620px" controls></video>
+    <h2>Forma melhor</h2>
+    <video controls width="620px" poster="imagens/Viagens de trem.png" loop>
+        <source src="midia/Meu-Video conv.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm">
+        <source src="midia/Meu-Video.mkv.mkv" type="video/x-matroska">
+        <source src="midia/Meu-Video.ogv.ogv" type="video/ogg">
+        <p>Se seu navegador não for compativel com nenhum formato do  video <a href="midia/Meu-Video conv.mp4">Baixe ele aqui</a></p>
+    </video>
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="620" height="315" src="https://www.youtube-nocookie.com/embed/OzUnqQk4eOg?si=M30-hQvq4xjWE7Rz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
