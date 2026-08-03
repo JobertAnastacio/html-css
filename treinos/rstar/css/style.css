@@ -2,10 +2,10 @@
 
 :root{
     --cor1:#1255B8;
-    --cor2:#2B4163;
-    --cor3:#90B812;
-    --cor4:#B83300;
-    --cor5:#27381C;
+    --cor2:#284D85;
+    --cor3:#293952;
+    --cor4:#242A33;
+    --cor5:#2E3033;
 }
 
 *{
@@ -13,7 +13,7 @@
     margin: 0px;
 }
 body{
-    background-color: #659aeb;
+    background-color: #cadeff;
    
 }
 header{
@@ -111,6 +111,9 @@ section a{
     font-weight: normal;
     text-align: justify;
     font-size: 0.8em
+}
+section a:hover{
+    text-decoration: underline;
 }
 section img{
     border-radius: 10px;
