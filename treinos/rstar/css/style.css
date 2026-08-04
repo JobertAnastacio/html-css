@@ -151,6 +151,7 @@ section a{
 }
 section a:hover{
     text-decoration: underline;
+    background-color: #284D85;
 }
 section img{
     border-radius: 10px;
