@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead,tfoot{
+            background-color: rgb(255, 4, 4);
+            color: white;
+    
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: right;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .estado{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        Anatomia de tabelas grandes
+        TABLE
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+                <th>PORCENTAGEM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="estado">São Paulo</td>
+                <td>46 081 801</td>
+                <td>21,59%</td>
+            </tr>
+            <tr>
+                <td class="estado">Minas Gerais</td>
+                <td>21 393 441</td>
+                <td>10,02%</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio de Janeiro</td>
+                <td>17 223 547</td>
+                <td>8,07%</td>
+            </tr>
+            <tr>
+                <td class="estado">Bahia</td>
+                <td>14 870 907</td>
+                <td>6,97%</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraná</td>
+                <td>11 890 517</td>
+                <td>5,57%</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio Grande do Sul</td>
+                <td>11 233 263</td>
+                <td>5,26%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>TOTAL DE HABITANTES</th>
+                <td><strong>213 421 037</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
