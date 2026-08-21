@@ -11,11 +11,20 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative; 
         }
         thead,tfoot{
-            background-color: rgb(255, 4, 4);
+            background-color: rgb(0, 0, 0);
             color: white;
     
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
         }
         td{
             border: 1px solid black;
@@ -29,6 +38,12 @@
         .estado{
             text-align: left;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(189, 189, 189);
+        }
     </style>
 </head>
 <body>
@@ -36,6 +51,7 @@
     <!-- 
         Anatomia de tabelas grandes
         TABLE
+            caption(legenda)
             THEAD
                 TR,TD,TH
             TBODY
@@ -44,11 +60,12 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>População das Unidades fedderativas</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
-                <th>PORCENTAGEM</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
+                <th scope="col">PORCENTAGEM</th>
             </tr>
         </thead>
         <tbody>
@@ -82,14 +99,67 @@
                 <td>11 233 263</td>
                 <td>5,26%</td>
             </tr>
+            <tr>
+                <td class="estado">Pernambuco</td>
+                <td>9 058 931</td>
+                <td>4,48%</td>
+            </tr>
+            <tr>
+                <td class="estado">Ceará</td>
+                <td>9 268 836</td>
+                <td>4,34%</td>
+            </tr>
+            <tr>
+                <td class="estado">Pará</td>
+                <td>8 711 196</td>
+                <td>4,08%</td>
+            </tr>
+            <tr>
+                <td class="estado">Santa Catarina</td>
+                <td>8 187 029</td>
+                <td>3,84%</td>
+            </tr>
+            <tr>
+                <td class="estado">Goiás</td>
+                <td>7 423 629</td>
+                <td>3,48%</td>
+            </tr>
+            <tr>
+                <td class="estado">Marannhão</td>
+                <td>7 018 211</td>
+                <td>3,29%</td>
+            </tr>
+            <tr>
+                <td class="estado">Amazonas</td>
+                <td>4 321 616</td>
+                <td>2,02%</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraíba</td>
+                <td>4 164 468</td>
+                <td>1,95%</td>
+            </tr>
+            <tr>
+                <td class="estado">Espírito Santo</td>
+                <td>4 126 854</td>
+                <td>1,93%</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>TOTAL DE HABITANTES</th>
+                <th scope="row">TOTAL DE HABITANTES</th>
                 <td><strong>213 421 037</strong></td>
                 <td>100%</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque voluptas commodi aperiam beatae odit vel placeat consectetur, ex labore obcaecati tempore sapiente. Incidunt consequuntur modi possimus amet porro tempore mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus porro pariatur fugit ea cumque recusandae enim, sed ratione esse unde voluptatum mollitia, nam nulla temporibus tempore nemo, suscipit vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus iste nemo hic quis blanditiis dolore et perferendis, quia repellat repellendus ad facere, id sint tempora deserunt ipsum sapiente eveniet!</p>
+</body>
 </body>
 </html>
