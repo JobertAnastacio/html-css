@@ -28,6 +28,22 @@ section#telefone{
     width: 311px;
     background: url(../imagens/frame-iphone.png) center center/cover no-repeat;
 }
+#redes{
+    text-align: right;
+}
+#redes img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
+}
+#redes img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transform: translate(-5px,-5px);
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.411);
+    transition: transform 0.3s;
+}
 #tela{
     position: relative;
     width: 269px;
