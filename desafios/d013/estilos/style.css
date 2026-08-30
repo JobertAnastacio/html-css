@@ -26,6 +26,12 @@ section#telefone{
     /* é bom olhar usnado um editor o tamanho da imagem */
     height: 627px;
     width: 311px;
-    background: url(../imagens/frame-iphone.png) center center/contain no-repeat fixed;
-
+    background: url(../imagens/frame-iphone.png) center center/cover no-repeat;
+}
+#tela{
+    position: relative;
+    width: 269px;
+    height: 470px;
+    top: 13%;
+    left: 23px;
 }
