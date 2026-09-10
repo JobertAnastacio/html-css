@@ -1,0 +1,49 @@
+@charset "UFT-8";  
+
+/* Versão mobile first */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    background: black url(../imagens/back-cel.jpg) center center/cover no-repeat;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.527);margin: auto;
+    width: 90vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+img{
+    display: block;
+    margin: auto;
+}
+img#cel{
+    display: block;
+}
+img#pc{
+    display: none;
+}
+img#tv{
+    display: none;
+}
+img#print{
+    display: none;
+}
+img#tablet{
+    display: none;
+}
