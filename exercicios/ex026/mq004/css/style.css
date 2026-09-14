@@ -5,18 +5,19 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     box-sizing: border-box;
 }
 html{
     height: 100vh;
 }
 body{
-    background: black url(../imagens/back-cel.jpg) center center/cover no-repeat;
+    background: black url(../imagens/back-cel.jpg) top center/cover no-repeat;
 }
 main{
-    background-color: rgba(255, 255, 255, 0.527);margin: auto;
-    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin: auto;
+    width: 400px;
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
@@ -26,24 +27,14 @@ h1{
     color: white;
     text-shadow: 1px 1px 1px black;
     padding-bottom: 10px;
-    font-size: 2em;
+    font-size: 1.9em;
 }
 img{
     display: block;
     margin: auto;
 }
-img#cel{
-    display: block;
-}
-img#pc{
-    display: none;
-}
-img#tv{
-    display: none;
-}
-img#print{
-    display: none;
-}
-img#tablet{
-    display: none;
-}
+img#cel{ display: block; }
+img#pc{ display: none; }
+img#tv{ display: none; }
+img#print{ display: none; }
+img#tablet{ display: none; }
