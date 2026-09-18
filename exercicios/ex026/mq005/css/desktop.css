@@ -19,7 +19,9 @@
         color: white;
         padding: 10px;
     }
-
+    span#burguer{
+        display: none;
+    }
     menu{
         display: block;
     }
@@ -39,6 +41,7 @@
         font-weight: bold;
         text-decoration: none;
         padding: 10px;
+        border-top: 0px;
     }
     main{
         background-color:rgb(229, 206, 252);
@@ -49,10 +52,4 @@
         padding: 15px;
         border-radius: 7px;
     }
-    main h2{
-        padding: 10px;
-    }
-    main p{
-        text-align: justify;
-    }
-}
+}    
