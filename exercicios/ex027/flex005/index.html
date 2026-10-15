@@ -15,8 +15,8 @@
         }
         main{
             background-color: rgb(23, 87, 65);
-            height: 90vh;
-            width: 90vw;
+            height: 100vh;
+            width: 100vw;
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
@@ -29,16 +29,17 @@
             width: 300px;
             border-radius: 10px;
             margin: auto;
-            
-            
+        }
+        div{
+            margin: 10px;
         }
         h1{
             color: beige;
             text-align: center;
             padding: 10px;
-            margin-bottom: 5px;
             
         }
+    
         label{
             background-color: rgb(12, 104, 104);
             text-align: center;
@@ -82,11 +83,15 @@
         <section>
             <h1>Tela de login</h1>
             <form action="">
-                <label for="igmail">Usuário</label>
-                <input type="email" name="gmail" id="igmail">
-                <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha">
-                <input type="submit" value="Enviar" id="enviar">
+                <div>
+                    <label for="igmail">Usuário</label>
+                    <input type="email" name="gmail" id="igmail">
+                </div>
+                <div>
+                    <label for="isenha">Senha</label>
+                    <input type="password" name="senha" id="isenha">
+                </div>
+                <div><input type="submit" value="Enviar" id="enviar"></div>
             </form>
         </section>
     </main>
