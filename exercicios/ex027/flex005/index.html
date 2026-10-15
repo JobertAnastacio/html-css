@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        main{
+            background-color: rgb(23, 87, 65);
+            height: 90vh;
+            width: 90vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: rgb(4, 46, 46);
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            
+        }
+        h1{
+            color: beige;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.8em;
+        }
+        label{
+            background-color: rgb(12, 104, 104);
+            padding: 2px;
+        }
+        #igmail{
+            border-style: none;
+            margin: auto;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        #isenha{
+            border-style: none;
+            margin: auto;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        input#enviar{
+            height: 20px;
+            width: 70px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de login</h1>
+            <form action="">
+                <label for="igmail">Usuário</label>
+                <input type="email" name="gmail" id="igmail">
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha">
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
