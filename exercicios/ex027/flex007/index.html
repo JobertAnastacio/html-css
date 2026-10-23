@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel BOX</title>
+    <style>
+        div.conteiner {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-flow: row wrap;
+        }   
+        div.it {
+            background-color: rgb(1, 119, 255);
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="it">A</div>
+        <div class="it" style="order: 4;">B</div>
+        <div class="it" style="order: -3;">C</div>
+        <div class="it"  style="order: 2;">D</div>
+        <div class="it">E</div>
+        <div class="it">F</div>
+        <div class="it">G</div>
+    </div>
+</body>
+</html>

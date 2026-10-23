@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel BOX</title>
+    <style>
+        div.conteiner {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+            height: 350px;
+        }   
+        div.it {
+            background-color: rgb(1, 119, 255);
+            border: 1px solid black;
+            text-align: center;
+            padding: 50px;
+            
+        }
+        div#o1{
+           align-self: stretch; 
+        }
+        div#o2{
+            align-self: flex-start;
+        }
+        div#o3{
+            align-self: center;
+        }
+        div#o4{
+            align-self: flex-end;
+        }
+        div#o5{
+            align-self: center;
+        }
+        div#o6{
+            align-self: auto;
+        }
+        div#o7{
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="it" id="o1">A</div>
+        <div class="it" id="o2">B</div>
+        <div class="it" id="o3">C</div>
+        <div class="it" id="o4">D</div>
+        <div class="it" id="o5">E</div>
+        <div class="it" id="o6">F</div>
+        <div class="it" id="o7">G</div>
+    </div>
+</body>
+</html>
