@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flex</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        header{
+            background-color: rgb(197, 2, 2);
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        header h1{
+            padding: 5px;
+            font-weight: bold;
+            color: white;
+            flex: 0 0 270px;
+        }
+        header nav{
+            padding: 3px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        a.op{
+            background-color: rgb(75, 13, 13);
+            padding: 7px;
+            margin: 2px;
+            text-decoration: none;
+            font-weight: bolder;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            
+            
+        }
+        a.op:hover{
+            background-color:rgb(0, 0, 0);
+            transition: background-color .5s;
+
+        }
+        
+        section{
+            background-color: rgb(252, 229, 229);
+            padding: 10px;
+            width: 80vw;
+            margin: auto;
+        }
+        @media screen  and (max-width:520px){
+            header{
+                flex-flow: column nowrap;
+                justify-content: space-between;
+            }
+            header h1{
+                background-color: aquamarine;
+            }
+            header nav{
+                background-color: rgb(85, 116, 116);
+                flex-flow: column nowrap;
+                width: 90vw;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de vendas</h1>
+        <nav>
+            <a href="#" class="op">Opção 1</a>
+            <a href="#" class="op">Opção 2</a>
+            <a href="#" class="op">Opção 3</a>
+            <a href="#" class="op">Opção 4</a>
+            <a href="#" class="op">Opção 5</a>
+            <a href="#" class="op">Opção 6</a>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Melhores itens de para venda</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam officiis sit ab, velit quod libero dignissimos ducimus, dolore necessitatibus culpa, natus quae perferendis qui. Consequatur accusantium incidunt ipsam facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est beatae fugit corrupti soluta maxime. Voluptatum ex cumque fugit quisquam fuga magni. Vitae reiciendis natus nulla inventore eos eveniet rerum molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas aliquid unde consectetur officiis omnis amet veniam sunt. Minima illo iusto nesciunt excepturi cupiditate dignissimos neque quae? Earum, beatae neque?</p>
+            <h3>Conheça também</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis laboriosam consectetur quos corrupti eius sequi neque exercitationem minus blanditiis quia, ab adipisci eum voluptate assumenda animi maxime laudantium nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deleniti in iste repellat illo corporis vel necessitatibus voluptas ullam laboriosam. Earum officia ullam ipsum asperiores repudiandae! Molestias ex deserunt quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam doloremque vel veritatis similique cumque quia earum obcaecati neque dolores quae qui quasi omnis iste nobis, optio explicabo perferendis necessitatibus?</p>
+        </section>
+    </main>
+</body>
+</html>
