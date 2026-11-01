@@ -45,6 +45,7 @@
             color: white;
             border-radius: 5px;
             text-align: center;
+            border: 1px solid rgb(75, 13, 13);
             
             
         }
@@ -60,18 +61,23 @@
             width: 80vw;
             margin: auto;
         }
+
         @media screen  and (max-width:520px){
             header{
                 flex-flow: column nowrap;
                 justify-content: space-between;
             }
             header h1{
-                background-color: aquamarine;
+                flex: none;
             }
             header nav{
-                background-color: rgb(85, 116, 116);
+                background-color: black;
+                flex: auto;
                 flex-flow: column nowrap;
                 width: 90vw;
+            }
+            a.op:hover{
+                border: 1px solid white;
             }
             
         }
