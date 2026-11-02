@@ -1,0 +1,82 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fonte2);
+}
+:root{
+    --cor1: rgb(23, 138, 132);
+    --cor2: rgb(36, 146, 141);
+    --cor3: rgb(0,238,232);
+
+    --fonte1: "IBM Plex Sans", system-ui, sans-serif;
+    --fonte2: "Space Grotesk", system-ui, sans-serif;
+}
+header{
+    background-color: var(--cor1);
+    color:white;
+    padding: 10px;   
+}
+header > h1{
+    font-family: var(--fonte1);
+    padding: 5px;
+}
+header > h2{
+    padding: 7px;
+}
+header > nav > a{
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+div#imgfundo{
+    height: 200px;
+    background-image: url(../midias/fundo-site.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+}
+main{
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+div > h2{
+    padding: 15px;
+    color: var(--cor3);
+}
+section#parte1{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div{
+    flex: 1 2 400px;
+    border-style: 2px dashed white;
+    max-width: 800px;
+}
+section#parte1 > video{
+    flex: 0 1 auto;
+}
+section#parte2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+section#parte2 > iframe{
+    flex: 0 1 auto;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor1);
+    color:white;
+    padding: 10px;   
+}
