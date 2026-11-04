@@ -29,9 +29,18 @@ header > h2{
     padding: 7px;
 }
 header > nav > a{
+    padding: 5px;
     color: white;
     font-weight: bold;
     margin: 5px;
+}
+a:hover{
+    transition-duration: 0.7s;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+
 }
 div#imgfundo{
     height: 200px;
@@ -60,11 +69,12 @@ section#parte1{
 
 section > div{
     flex: 1 2 400px;
-    border-style: 2px dashed white;
+    border: 2px dashed white;
     max-width: 800px;
 }
 section#parte1 > video{
     flex: 0 1 auto;
+    border: 2px dashed white;
 }
 section#parte2{
     display: flex;
@@ -74,8 +84,10 @@ section#parte2{
 }
 section#parte2 > iframe{
     flex: 0 1 auto;
+    border: 2px dashed white;
 }
 footer{
+    font-size: 0.8em;
     text-align: center;
     background-color: var(--cor1);
     color:white;
