@@ -6,6 +6,7 @@
 }
 body{
     font-family: var(--fonte2);
+    line-height: 1.5em;
 }
 :root{
     --cor1: rgb(23, 138, 132);
@@ -46,7 +47,7 @@ main{
     background-color: black;
     color: white;
 }
-div > h2{
+div > h2, .normal > h2{
     padding: 15px;
     color: var(--cor3);
 }
