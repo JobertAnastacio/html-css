@@ -111,7 +111,7 @@
         var valor1 = Number(v1.value)
         var valor2 = Number(v2.value)
         var result = valor1 + valor2
-        total.innerHTML = `A soma entre ${valor1} e  ${valor2} é ${result}`
+        total.innerHTML = `Resultado = ${result}`
         }
         function multiplicar(){
         var v1 = document.getElementById('txt1')
@@ -120,14 +120,14 @@
         var valor1 = Number(v1.value)
         var valor2 = Number(v2.value)
         var result = valor1 * valor2
-        total.innerHTML = `A multiplicação entre ${valor1} e  ${valor2} é ${result}`
+        total.innerHTML = `Resultado = ${result}`
         }
         function dividir(){
         var v1 = Number(document.getElementById('txt1').value)
         var v2 = Number(document.getElementById('txt2').value)
         var total = document.querySelector('div#res')
         var result = v1 / v2
-        total.innerHTML = `A Divisão de ${v1} por ${v2} é ${result.toFixed(2)}`
+        total.innerHTML = `Resultado = ${result.toFixed(2)}`
         }
     </script>
 </body>
