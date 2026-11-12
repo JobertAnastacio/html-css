@@ -9,10 +9,10 @@
     hora = 1
         
     if (hora <= 12){
-        horario.innerHTML = `<h3>Bom dia, são ${hora} horas</h3>`
+        horario.innerHTML = `<h3>Bom dia, são ${hora} horas!</h3>`
     }
     else if(hora < 18){
-        horario.innerHTML = `<h3>Boa tarde, são ${hora} horas</h3>`
+        horario.innerHTML = `<h3>Boa tarde, são ${hora} horas!</h3>`
         fundo.style.background = 'url("../imagens/background_tarde.gif") center center/cover no-repeat fixed'
         rodape.style.color = 'white'
         titulo.style.color = 'white'
@@ -20,7 +20,7 @@
         img.src = '../imagens/sol-tarde.png'
     }
     else{
-        horario.innerHTML = `<h3>Boa noite, são ${hora} horas</h3>`
+        horario.innerHTML = `<h3>Boa noite, são ${hora} horas!</h3>`
         horario.style.color = '#FCBC3A'
         fundo.style.background = 'url("../imagens/background_noite.jpg") center center/cover no-repeat fixed'
         rodape.style.color = '#FCBC3A'
