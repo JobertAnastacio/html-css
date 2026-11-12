@@ -34,9 +34,11 @@ main{
     align-content: center;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
 }
-
+div#horas{
+    margin: 20px;
+}
 img{
-    margin: 30px;
+    margin: auto;
     background-color:#4780D0;
     flex: 1 1 auto;
     width: 50%;
