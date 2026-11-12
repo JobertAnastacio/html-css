@@ -6,7 +6,6 @@
     var imagem = document.getElementById('img')
     var rodape = document.getElementById('rodape')
     var main = document.getElementById('main')
-    hora = 15
         
     if (hora <= 12){
         horario.innerHTML = `<h3>Bom dia, são ${hora} horas!</h3>`
